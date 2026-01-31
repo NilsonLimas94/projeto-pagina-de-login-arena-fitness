@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;400;700&family=Ubuntu&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    text-decoration: none;
+}
+
+body, main {
+    width: 100vw;
+}
+
+.msg-welcome {
+    display: flex;
+    height: 100vh;
+}
+
+.content-welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    background: url(../img/banner-musculacao.jpg) no-repeat center/cover;
+    animation: imagemAnimation 60s linear infinite reverse ;
+}
+
+.content-welcome h1 {
+    font-size: 42px;
+    color: #FDFDFF;
+    text-shadow: 2px 2px 4px rgb(255, 0, 0);
+}
+.content-welcome p {
+    margin-right: 55px;
+    font-size: 24px;
+    margin-top: 10px;
+    color: #FDFDFF;
+    text-shadow: 2px 2px 4px rgb(252, 0, 0);
+}
+
+.login-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+}
+
+.title-form{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    width: 35vw;
+}
+
+.login-area label {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 50px 0 0 0;
+    background: #590404;
+    background: linear-gradient(to right, #590404 0%, #B1120F 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.login-area input {
+    width: 35vw;
+    height: 37px;
+    border-radius: 5px;
+    border: 1px solid #ff00005d;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.25);
+    margin-bottom: 10px;
+    padding: 10px;
+    transition: all 0.2s linear;
+}
+
+.login-area input:focus {
+    outline: none;
+    border: 2px solid #ca0b0b;
+}
+.login-area input::placeholder {
+    font-size: 14px;
+    color: #667085;
+}
+
+.reset-password {
+    display: flex;
+    justify-content: right;
+    align-items: right; 
+    width: 35vw;
+    margin-top: 5px;
+}
+
+.reset-password a {
+    font-size: 16px;
+    color: #2B2B2B;
+    transition: all 0.3s linear;
+}
+.reset-password a:hover {
+    text-decoration: underline;
+    color: #0B9DCA;
+}
+
+.login-area button {
+    width: 35vw;
+    height: 55px;
+    background: linear-gradient(90deg, #690000 0%, #f80000 100%);
+    box-shadow: 0px 4px 4px 0px #00000040;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+.login-area button:hover {
+    background: linear-gradient(90deg, #9c0000d7 0%, #f72929cb 100%);
+    transform: scale(0.99);
+}
+
+.text-login-google {
+    position: relative;
+    width: 35vw;
+    margin-top: 30px;
+    border-bottom: 1px solid #626476;
+}
+
+.text-login-google p {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #FFFFFF;
+    color: #626476;
+    font-size: 16px;
+    padding: 0 10px;
+}
+
+
+.login-google {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35vw;
+    margin: 40px 0 30px 0;
+}
+
+.login-google img {
+    padding: 10px;
+    width: 50px;
+}
+
+.login-google a {
+    font-size: 16px;
+    color: #2B2B2B;
+    transition: all 0.3s linear;
+}
+.login-google a:hover {
+    text-decoration: underline;
+    color: #0B9DCA;
+}
+
+.text-sign-up {
+    font-size: 16px;
+}
+
+.text-sign-up a {
+    color: #0B9DCA;
+    transition: all 0.3s linear;
+}
+.text-sign-up a:hover {
+    text-decoration: underline;
+    color: #007A85;
+}
+
+@keyframes imagemAnimation {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .msg-welcome {
+        flex-direction: column;
+    }   
+    .content-welcome {
+        width: 100vw;
+        height: 35%;
+    }
+    .content-welcome h1 {
+        font-size: 26px;
+    }
+    .content-welcome p {
+        font-size: 16px;
+        margin: 10px 30px 20px 25px;
+    }
+
+    .login-area {
+        width: 100vw;
+        height: 100vh;
+    }
+    .login-area input {
+        width: 80vw;
+    }
+    .title-form {
+        width: 80vw;
+    }
+    .reset-password {
+        width: 80vw;
+    }
+    .login-area button {
+        width: 80vw;
+    }
+    .text-login-google {
+        width: 80vw;
+    }
+    .login-google {
+        width: 80vw;
+    }
+}
